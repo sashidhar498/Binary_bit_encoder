@@ -73,11 +73,11 @@ if __name__ == "__main__":
             print("text has been provided")
         else:
             if len(sys.argv) >1:
-                print("correct format is python encoding_text_to_image.py image.jpg textfile.txt")
+                print("correct format is python encoding_text_to_image.py your_image.jpg your_textfile.txt")
                 exit()
     else:
         if len(sys.argv) >1:
-            print("correct format is python encoding_text_to_image.py image.jpg textfile.txt")
+            print("correct format is python encoding_text_to_image.py your_image.jpg your_textfile.txt")
             exit()
         image_path="none"
     if image_path=="none":
