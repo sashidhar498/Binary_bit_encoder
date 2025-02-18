@@ -48,11 +48,11 @@ if __name__ == "__main__":
             print("image and textfile has been provided")
         else:
             if len(sys.argv) >1:
-                print("correct format is python Decoding_image_to_text.py image.jpg textfile.txt")
+                print("correct format is python Decoding_image_to_text.py your_image.jpg your_textfile.txt")
                 exit()
     else:
         if len(sys.argv) >1:
-            print("correct format is python Decoding_image_to_text.py image.jpg textfile.txt")
+            print("correct format is python Decoding_image_to_text.py your_image.jpg your_textfile.txt")
             exit()
     try:
         if img_path:
@@ -63,4 +63,4 @@ if __name__ == "__main__":
 
             print(f"Decoded Text saved in : {file_name}")
     except:
-        print("No image selected. use python Decoding_image_to_text.py image.jpg textfile.txt")
+        print("No image selected. use python Decoding_image_to_text.py your_image.jpg your_textfile.txt")
