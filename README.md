@@ -43,7 +43,7 @@ pip install opencv-python numpy
 ### Encoding Text to Image
 #### Syntax:
 ```bash
-python encoding_text_to_image.py [image_path] [text_file]
+python encoding_text_into_image.py [image_path] [text_file]
 ```
 #### Parameters:
 - `image_path`: (Optional) Path to an image file to embed the text into.
@@ -52,19 +52,19 @@ python encoding_text_to_image.py [image_path] [text_file]
 #### Example:
 1. **Without an image or text file**:
    ```bash
-   python encoding_text_to_image.py
+   python encoding_text_into_image.py
    ```
    You will be prompted to manually enter the text to encode.
 
 2. **With an image and text file**:
    ```bash
-   python encoding_text_to_image.py input_image.jpg input_text.txt
+   python encoding_text_into_image.py input_image.jpg input_text.txt
    ```
    The script will encode the text from `input_text.txt` into `input_image.jpg`.
 
 3. **With only an image**:
    ```bash
-   python encoding_text_to_image.py input_image.jpg
+   python encoding_text_into_image.py input_image.jpg
    ```
    You will be prompted to enter the text manually.
 
@@ -76,7 +76,7 @@ python encoding_text_to_image.py [image_path] [text_file]
 ### Decoding Image to Text
 #### Syntax:
 ```bash
-python decoding_image_to_text.py [image_path] [output_text_file]
+python decoding_image_into_text.py [image_path] [output_text_file]
 ```
 #### Parameters:
 - `image_path`: Path to the image containing encoded text.
@@ -85,13 +85,13 @@ python decoding_image_to_text.py [image_path] [output_text_file]
 #### Example:
 1. **With an image only**:
    ```bash
-   python decoding_image_to_text.py encoded_image.png
+   python decoding_image_into_text.py encoded_image.png
    ```
    The decoded text will be saved in `output.txt`.
 
 2. **With an image and custom output file**:
    ```bash
-   python decoding_image_to_text.py encoded_image.png decoded_text.txt
+   python decoding_image_into_text.py encoded_image.png decoded_text.txt
    ```
 
 #### Output:
